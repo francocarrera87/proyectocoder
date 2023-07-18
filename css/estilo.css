@@ -55,6 +55,7 @@
 
 /*--------------------------Apartado header----------------------------*/
 /*---------------------------aparado registro-----------------------------*/
+
 .registrar{
   display: flex;
   align-items: center;
@@ -88,6 +89,7 @@
 
 .apartado{
   width: 100%;
+
   padding: 0 30px;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -227,6 +229,9 @@
   .bodyregistro{
     font-size: 10px;
   }
+  .apartado{
+    margin-top: 80%;
+  }
   .contenedor-registro{
     height: auto;
     flex-direction: column;
@@ -238,7 +243,9 @@
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0;
+    margin-top: 100px;
   }
+    
   .conte-informacion{
     width: 100%;
     padding: 20%;
@@ -249,7 +256,6 @@
     margin-top: 90%;
   }
 }
-
 
 
 
@@ -817,11 +823,10 @@
 
 
 /*---------------------------------------------------*/
-
 .footer .pre-footer {
   background-color: #1e3932;
-  display:100px;
-  justify-content:flex-end ;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -829,13 +834,15 @@
   width: 10%;
   height: 100%;
   margin-right: 10px;
+  display: flex;
+  text-align: center;
+  margin: auto;
 }
-
 
 
 .footer {
   background-color: #f9f9f9;
-  padding: 20px;
+  padding:0;
   text-align: center;
   padding-top: 50px;
 }
@@ -846,16 +853,11 @@
   padding-top: 20px;
 }
 
-
-
 .footer .redes-Sociales img {
   width: 30px;
   height: 30px;
-  margin-left: 20px;
   margin-bottom: 20px;
 }
-
-
 
 .footer .enlaces-Footer li {
   display: inline-block;
@@ -863,12 +865,12 @@
   margin-bottom: 10px;
   padding-bottom: 10px;
   color: black;
-
-  
 }
+
 .enlaces-Footer a {
   color: rgb(94, 94, 94);
-  text-decoration: none;}
+  text-decoration: none;
+}
 
 .footer .lorem-Footer {
   margin-top: 20px;
