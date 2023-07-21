@@ -1,5 +1,5 @@
 @import url(https://fonts.adobe.com/fonts/freight-sans?as_campaign=a8192&as_camptype=&as_channel=affiliate&as_source=partnerize&clickref=1011lwU8XQpo&mv=affiliate&mv2=pz);
-.main{padding: 2%;}
+
 *{ 
   margin: 0;
   padding: 0;
@@ -243,9 +243,7 @@
   .bodyregistro{
     font-size: 10px;
   }
-  .apartado{
-    margin-top: 80%;
-  }
+  
   .contenedor-registro{
     height: auto;
     flex-direction: column;
@@ -860,6 +858,10 @@
 
 }
 
+.no-scrollable .apartado{
+  padding-bottom: 50px;
+}
+
 
 .no-scrollable img{
   max-width: 400px;
@@ -975,6 +977,12 @@
   .scrollable {
     width: 100%; 
   }
+  .rewards.no-scrollable img{
+    max-width: 300px;
+    width: auto;
+    height: auto;
+  }
+
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 9%;
@@ -991,9 +999,12 @@
   .grid-item p{
     font-size: 100%;
     min-height: 50px;
-
-
   }
+
+  .no-scrollable{
+    padding-bottom: -10;
+  }
+
 }
 
 
