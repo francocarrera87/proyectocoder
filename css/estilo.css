@@ -127,6 +127,20 @@
   text-decoration: none;
 }
 
+.rewards .apartado a{
+  background-color:#00824800;
+  outline: none;
+  margin: 25px;
+  font-weight: bold;
+  border: solid 1px #fbfbfb;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: rgb(220, 248, 224);
+  cursor: pointer;
+  transition: background-color .3s ease;
+  text-decoration: none;
+}
+
 .apartado a:hover{/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
   background-color: #305249;
   border: none;
@@ -699,7 +713,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  padding: 4px 6px; /* Ajusta el padding para modificar el tamanio*/
+  padding: 4px 6px; 
   color: #053826;
   background-color: #0a895a;
   border: none;
@@ -775,7 +789,7 @@
 
 .main-contacto .contenido h2 {
   font-size: 33px;
-  text-align: left; /* Alinea el texto a la izquierda */
+  text-align: left; 
   margin-top:25px ;
   margin-bottom: 20px;
   font-weight: bold;
@@ -820,9 +834,173 @@
 
 
 /*------------------ Fin Cafe --------------------------------------------------------------*/
+/*------------------ Inicio Rewards --------------------------------------------------------------*/
+
+.rewards {
+  display: flex;
+  height: 100vh;
+}
+
+.no-scrollable {
+  width: 50%;
+  background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%);
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15%;
+}
 
 
-/*---------------------------------------------------*/
+.no-scrollable h1{
+  padding-top: 20px;
+  padding-bottom: 25px;
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: 600;
+
+}
+
+
+.no-scrollable img{
+  max-width: 400px;
+  width: auto;
+  height: auto;
+}
+
+.scrollable {
+  
+  width: 65%;
+  overflow-y: auto;
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas para pantallas grandes */
+  gap: 5px;
+}
+
+
+.rewards .scrollable .contenedor-2 .grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 5px;
+}
+
+.contenedor-3,.contenedor-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+}
+
+
+.rewards h2 {
+  margin-bottom: 20px;
+  padding-top: 10%;
+}
+.contenedor-4 .gift{
+  max-width: 400px;
+  width: auto; 
+  height: auto; 
+  margin-bottom: 10px;
+}
+.contenedor-4 .pago {
+  display: flex; 
+  justify-content: center; 
+  margin-bottom: 15px; 
+}
+
+
+.contenedor-4 img{
+  gap: 30px;
+}
+
+.contenedor-3 img {
+  padding-top: 20px;
+  max-width: 600px;
+  max-height: 600px; 
+  width: 100%;
+  height: auto; 
+  margin-bottom: 10px;
+}
+.contenedor-4 .pago img{
+  margin: 30px;
+}
+
+.contenedor-3,.contenedor-4 p{
+  font-weight: bold;
+  color: #555;
+  font-size: 20px;
+
+}
+
+.grid-item {
+
+  padding: 5px;
+  text-align: center; /* Centra contenido dentro de griddd*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+
+
+.grid-item p{
+  font-weight: bold;
+  color: #555;
+  font-size: 85%;
+}
+
+
+.grid-item  img {
+  padding-top: 15px;
+  max-width: 70%; 
+  height: auto; 
+  display: block; 
+  margin-bottom: 10px; 
+}
+
+
+@media screen and (max-width: 1100px) {
+  .rewards {
+    flex-direction: column; 
+  }
+  .no-scrollable,
+  .scrollable {
+    width: 100%; 
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 9%;
+  }
+  .rewards .scrollable .contenedor-2 .grid-container{
+    grid-template-columns: repeat(2, 3fr);
+
+  }
+  .grid-item img {
+    max-width: 45%;
+    max-width: 150px;
+    min-width: 90px;
+  }
+  .grid-item p{
+    font-size: 100%;
+    min-height: 50px;
+
+
+  }
+}
+
+
+
+/*------------------ Fin Rewards --------------------------------------------------------------*/
+
+
 .footer .pre-footer {
   background-color: #1e3932;
   display: flex;
@@ -839,14 +1017,11 @@
   margin: auto;
 }
 
-
 .footer {
   background-color: #f9f9f9;
-  padding:0;
+  padding: 0;
   text-align: center;
-  padding-top: 50px;
 }
-
 .footer .redes-Sociales {
   display: inline-block;
   margin-right: 10px;
@@ -876,4 +1051,4 @@
   margin-top: 20px;
 }
 
-
+/*---------------------------------------------------*/
